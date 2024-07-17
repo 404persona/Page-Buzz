@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { Suspense, useRef, useState } from 'react'
 import { motion } from 'framer-motion';
 import { FaPause, FaPlay } from 'react-icons/fa6';
 
@@ -36,9 +36,11 @@ const MainVideo = () => {
                 <div>
                     <div className='flex justify-center items-center'>
                         <div className='absolute top-[-400px] rounded-3xl border-[1px] border-green-500 p-6'>
-                            <video ref={videoRef} loop muted className='object-cover w-[900px] h-[400px] rounded-3xl'>
+                          <Suspense fallback={<div>Loading Video...</div>} >
+                          <video ref={videoRef} loop muted className='object-cover w-[900px] h-[400px] rounded-3xl'>
                                 <source src="/Video3.mp4" preload='true' />
                             </video>
+                          </Suspense>
                         </div>
                     </div>
                     <div className='flex justify-center'>

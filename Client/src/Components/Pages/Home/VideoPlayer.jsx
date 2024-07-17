@@ -34,13 +34,13 @@ const VideoPlayer = () => {
       <div className='flex flex-col gap-6 justify-center items-center'>
         <div>
           <video ref={videoRef1} loop mute className="flex space-x-8 object-cover rounded-full w-[330px] h-[130px]">
-            <source src="https://videos.pexels.com/video-files/10004092/10004092-sd_960_506_30fps.mp4" type="video/mp4" />
+            <source src="/Video1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className=''>
           <video ref={videoRef2} loop mute className="flex rounded-full w-[330px] h-[130px] object-cover relative right-[80px]" >
-            <source src="https://videos.pexels.com/video-files/853878/853878-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            <source src="/Video2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

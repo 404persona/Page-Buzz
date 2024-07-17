@@ -4,6 +4,7 @@ import { GiDiamonds } from "react-icons/gi";
 import Second from './Second';
 import Services from './Services';
 import MainVideo from './MainVideo';
+import WhyCUS from './WhyCUS';
 
 const Home = () => {
   return (
@@ -39,6 +40,9 @@ const Home = () => {
       </div>
       <div>
         <MainVideo/>
+      </div>
+      <div>
+        <WhyCUS/>
       </div>
     </div>
   )
