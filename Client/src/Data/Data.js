@@ -71,3 +71,54 @@ export const WhyChooseUsCards = [
         content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus."
     }
 ]
+
+export const FeaturedProjectsData = [
+    {
+        title : "E-commerce Website Revamp for TrendyFashion",
+        content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
+        buttons : {
+            button1 : {
+                text : "#Ecommerce"
+            },
+            button2 : {
+                text : "#Website"
+            },
+            button3 : {
+                text : "#UXDesign"
+            },
+        },
+        image : "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        title : "SEO Optimization for HealthPlus Clinic",
+        content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
+        buttons : {
+            button1 : {
+                text : "#OrganicGrowth"
+            },
+            button2 : {
+                text : "#SEO"
+            },
+            button3 : {
+                text : "#HealthCare"
+            },
+        },
+        image  : "https://images.pexels.com/photos/669622/pexels-photo-669622.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        title : "Social Media Campaign for FreshEats",
+        content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
+        buttons : {
+            button1 : {
+                text : "#SocialMedia"
+            },
+            button2 : {
+                text : "#DigitalMarketing"
+            },
+            button3 : {
+                text : "#FreshEats"
+            },
+        },
+        image : "https://images.pexels.com/photos/7309742/pexels-photo-7309742.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+]
