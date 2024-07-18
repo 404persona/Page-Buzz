@@ -22,13 +22,13 @@ const Hero = () => {
       <div className="relative top-[-100px] pt-[230px]   ">
         {/* Background div with images */}
         <div>
-          <div className="absolute inset-0 z-0 ">
-            <motion.img
+          <div className="absolute right-[200px] overflow-hidden inset-0 z-0 ">
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.1, ease: "easeIn" }}
-              src="/herocorner.png"
-              className="object-cover"
+              // src="/herocorner.png"
+              className="object-cover w-[300px] h-[250px] blur-[150px] bg-green-600"
             />
           </div>
 

@@ -5,6 +5,7 @@ import Second from './Second';
 import Services from './Services';
 import MainVideo from './MainVideo';
 import WhyCUS from './WhyCUS';
+import FeaturedProjects from './FeaturedProjects';
 
 const Home = () => {
   return (
@@ -43,6 +44,9 @@ const Home = () => {
       </div>
       <div>
         <WhyCUS/>
+      </div>
+      <div>
+        <FeaturedProjects/>
       </div>
     </div>
   )
