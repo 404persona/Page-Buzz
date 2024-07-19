@@ -35,7 +35,7 @@ const BuzzStats = () => {
         <div className='py-20'>
             <div>
                 <div className='text-center'>
-                    <h1 className='text-[3rem] bg-gradient-to-r from-white to-gray-600 text-transparent bg-clip-text'>Buzz Stats.</h1>
+                    <h1 className='text-[3rem] bg-gradient-to-r from-white to-gray-600 text-transparent bg-clip-text font-medium'>Buzz Stats.</h1>
                 </div>
                 <div className="flex flex-wrap justify-center items-center py-10">
                     {/* <Counter end={1200} text="Happy Clients" />

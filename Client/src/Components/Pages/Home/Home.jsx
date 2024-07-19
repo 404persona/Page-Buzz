@@ -7,6 +7,7 @@ import MainVideo from './MainVideo';
 import WhyCUS from './WhyCUS';
 import FeaturedProjects from './FeaturedProjects';
 import BuzzStats from './BuzzStats';
+import Testimonials from './Testimonials';
 
 const Home = () => {
   return (
@@ -51,6 +52,9 @@ const Home = () => {
       </div>
       <div>
         <BuzzStats/>
+      </div>
+      <div>
+        <Testimonials/>
       </div>
     </div>
   )

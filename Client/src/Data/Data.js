@@ -140,3 +140,16 @@ export const StatsData = [
         text : "Successful marketing campaigns launched, driving growth and engagement."
     }
 ]
+
+export const TestimonialsData = [
+    {
+        content : "PageBuzz transformed our online store into a sleek, user-friendly platform. Our sales skyrocketed by 35% in just three months! Their team is professional, creative, and incredibly responsive.",
+        name : "Anas Ahmad",
+        bio : "CEO of Buzz",
+        rating : "4.8",
+        avatar : '/CEOAvatar.png'
+    },
+    {
+        content : ""
+    }
+]
