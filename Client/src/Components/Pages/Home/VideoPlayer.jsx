@@ -8,23 +8,26 @@ const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    videoRef1.current.play();
-    videoRef2.current.play();
-    videoRef3.current.play();
-  }, []);
-
-  const togglePlayButton = async () => {
-    if (isPlaying) {
-      videoRef1.current.pause();
-      videoRef2.current.pause();
-      videoRef3.current.pause();
-    } else {
+    const playVideos = () => {
       videoRef1.current.play();
       videoRef2.current.play();
       videoRef3.current.play();
+    };
+
+    if (isPlaying) {
+      playVideos();
     }
-    setIsPlaying(!isPlaying)
-  }
+
+    return () => {
+      videoRef1.current.pause();
+      videoRef2.current.pause();
+      videoRef3.current.pause();
+    };
+  }, [isPlaying]); // Only update when isPlaying changes
+
+  const togglePlayButton = async () => {
+    setIsPlaying(!isPlaying);
+  };
 
 
 
@@ -33,21 +36,19 @@ const VideoPlayer = () => {
     <div className='flex justify-between items-center'>
       <div className='flex flex-col gap-6 justify-center items-center'>
         <div>
-          <video ref={videoRef1} loop mute className="flex space-x-8 object-cover rounded-full w-[330px] h-[130px]">
+          <video ref={videoRef1} loop mute preload="auto"  className="flex space-x-8 object-cover rounded-full w-[330px] h-[130px]">
             <source src="/Video1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className=''>
-          <video ref={videoRef2} loop mute className="flex rounded-full w-[330px] h-[130px] object-cover relative right-[80px]" >
+          <video ref={videoRef2} loop mute preload="auto"  className="flex rounded-full w-[330px] h-[130px] object-cover relative right-[80px]" >
             <source src="/Video2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
         <div>
-          <video ref={videoRef3} loop mute className="flex space-x-8 rounded-full w-[330px] h-[130px] object-cover">
+          <video ref={videoRef3} loop mute preload="auto"  className="flex space-x-8 rounded-full w-[330px] h-[130px] object-cover">
             <source src="/HeroVideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
       </div>

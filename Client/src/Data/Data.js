@@ -122,3 +122,21 @@ export const FeaturedProjectsData = [
         image : "https://images.pexels.com/photos/7309742/pexels-photo-7309742.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
 ]
+
+export const StatsData = [
+    {
+        title : "Happy Clients",
+        limit : 1200,
+        text : "Number of satisfied clients who have benefited from our services."
+    },
+    {
+        title : "Projects Completed",
+        limit : 850,
+        text : "Total projects successfully delivered across various industries"
+    },
+    {
+        title : "Campaigns Launched",
+        limit : 1500,
+        text : "Successful marketing campaigns launched, driving growth and engagement."
+    }
+]
