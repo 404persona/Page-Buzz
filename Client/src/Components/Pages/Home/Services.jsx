@@ -4,21 +4,21 @@ import { FiArrowRight } from "react-icons/fi";
 const Services = () => {
     return (
         <div>
-            <div className='flex justify-between px-20 pt-20 pb-6'>
+            <div className='flex justify-between md:px-20 max-sm:px-6 pt-20 pb-6'>
                 <div>
-                    <h1 className='text-[3.5rem] bg-gradient-to-r from-white to-gray-500 font-medium text-transparent bg-clip-text'>Our Services</h1>
+                    <h1 className='md:text-[3.5rem] max-sm:text-[2.5rem] bg-gradient-to-r from-white to-gray-500 font-medium text-transparent bg-clip-text'>Our Services</h1>
                 </div>
-                <div className='bg-green-500  w-[90px] flex justify-center items-center rounded-full hover:bg-transparent hover:border-[1px] hover:border-green-500 transition-colors '>
-                    <button className='w-[30px] font-medium leading-tight flex justify-center'>
+                <div className='bg-green-500  md:w-[90px] max-sm:p-2 flex justify-center items-center rounded-full hover:bg-transparent hover:border-[1px] hover:border-green-500 transition-colors '>
+                    <button className='md:w-[30px] font-medium leading-tight flex justify-center'>
                         SEE ALL
                     </button>
                 </div>
             </div>
-           <div className='px-10'>
-           <div className='px-20 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+           <div className='md:px-10'>
+           <div className='md:px-20 max-sm:p-3 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
                 <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-6 '>
-                        <h1 className='text-[2.8rem]'>Website Development</h1>
+                    <div className='flex items-center max-sm:gap-1 md:gap-6 '>
+                        <h1 className='text-[2.8rem] max-sm:text-[2rem]'>Website Development</h1>
                         <FiArrowRight className='text-[2.5rem]' />
                     </div>
                     <div>
@@ -28,7 +28,7 @@ const Services = () => {
             </div>
            <div className='px-20 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
                 <div className='flex items-center flex-row-reverse justify-between'>
-                    <div className='flex items-center gap-6 '>
+                    <div className='flex items-center max-sm:gap-1 md:gap-6'>
                         <h1 className='text-[2.8rem]'>Digital Marketing</h1>
                         <FiArrowRight className='text-[2.5rem]' />
                     </div>

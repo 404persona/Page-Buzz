@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLinks } from './../../Data/Data';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const textVariants = {
   hidden: { opacity: 0, transform: 'translateY(30px)' },
@@ -10,14 +10,16 @@ const textVariants = {
     opacity: 1,
     transform: 'translateY(0px)',
     transition: {
-      delay: i * 0.13, // Check if delay values are logged here (optional)
-      duration: .9,
+      delay: i * 0.13,
+      duration: 0.9,
       ease: [0.090, 0.515, 0.345, 1],
     },
   }),
 };
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarRef = useRef(null);
 
   useEffect(() => {
@@ -28,43 +30,74 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup function to remove event listener on component unmount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   return (
-    <div className='fixed w-[100%] z-50'>
+    <div className='fixed md:w-full  max-sm:w-full z-50'>
       <div className='my-4 mx-4'>
-        <nav ref={navbarRef} className={`bg-black/30 rounded-3xl backdrop-blur-sm flex  justify-between px-20 items-center py-4 transition-all ${isScrolled ? 'bg-black/30' : 'bg-transparent backdrop-blur-0'}`}>
+        <nav ref={navbarRef} className={`bg-black/30 backdrop-blur-sm rounded-3xl  flex justify-between px-4 md:px-20 items-center py-4 transition-all ${isScrolled ? 'bg-black/30' : 'bg-transparent backdrop-blur-0'}`}>
           <div>
             <Link to='/'>
-              <h1 className='uppercase text-3xl font-medium bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text'>pagebuzz</h1>
+              <h1 className='uppercase text-3xl max-sm:text-2xl font-medium bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text'>pagebuzz</h1>
             </Link>
           </div>
-          <div>
+          <div className='hidden md:flex'>
             <ul>
               <li className="flex gap-6">
                 {NavLinks.map((links, index) => (
-                  <Link className='uppercase font-medium overflow-hidden ' to={links.href} >
+                  <Link key={index} className='uppercase font-medium overflow-hidden' to={links.href}>
                     <motion.p
-                      key={index}
                       custom={index}
                       initial="hidden"
                       animate="visible"
                       variants={textVariants}
                       className="overflow-hidden transition-all"
-                    >{links.label}</motion.p>
+                    >
+                      {links.label}
+                    </motion.p>
                   </Link>
                 ))}
               </li>
             </ul>
           </div>
-          <div>
-            <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-3 font-medium' >Email Us</button>
+          <div className='hidden md:flex'>
+            <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-3 font-medium'>Email Us</button>
+          </div>
+          <div className='md:hidden'>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <FaTimes className='w-6 h-6 text-white' /> : <FaBars className='w-6 h-6 text-white' />}
+            </button>
           </div>
         </nav>
       </div>
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="fixed top-16 left-0 w-screen h-screen bg-black/30 rounded-b-3xl backdrop-blur-sm z-50"
+        >
+          <ul className='flex flex-col items-center py-4'>
+            {NavLinks.map((links, index) => (
+              <Link key={index} className='uppercase font-medium py-2' to={links.href} onClick={() => setIsMenuOpen(false)}>
+                <motion.p
+                  custom={index}
+                  initial="hidden"
+                  animate="visible"
+                  variants={textVariants}
+                  className="overflow-hidden transition-all"
+                >
+                  {links.label}
+                </motion.p>
+              </Link>
+            ))}
+            <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-3 font-medium mt-4'>Email Us</button>
+          </ul>
+        </motion.div>
+      )}
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

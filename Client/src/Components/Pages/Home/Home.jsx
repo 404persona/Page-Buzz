@@ -15,18 +15,18 @@ const Home = () => {
       <div>
         <Hero />
       </div>
-      <div className='flex justify-center items-center gap-6 py-3'>
+      <div className='flex justify-center items-center md:gap-6 max-sm:gap-1 py-3 max-sm:text-[.8rem] max-sm:px-2'>
         <div>
           <p>Award-Winning Strategies</p>
         </div>
         <div>
-          <GiDiamonds className='text-green-500 text-[1.5rem]' />
+          <GiDiamonds className='text-green-500 md:text-[1.5rem]' />
         </div>
         <div>
           <p>1,000+ Successful Campaigns Delivered</p>
         </div>
         <div>
-        <GiDiamonds className='text-green-500 text-[1.5rem]' />
+        <GiDiamonds className='text-green-500 md:text-[1.5rem]' />
         </div>
         <div>
           <p>98% Client Satisfaction Rate</p>
