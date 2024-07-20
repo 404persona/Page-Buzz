@@ -146,10 +146,28 @@ export const TestimonialsData = [
         content : "PageBuzz transformed our online store into a sleek, user-friendly platform. Our sales skyrocketed by 35% in just three months! Their team is professional, creative, and incredibly responsive.",
         name : "Anas Ahmad",
         bio : "CEO of Buzz",
-        rating : "4.8",
+        rating : "5",
         avatar : '/CEOAvatar.png'
     },
     {
-        content : ""
+        content : "The SEO strategies implemented by PageBuzz were a game-changer for us. We saw a 50% increase in organic traffic and now rank at the top of search results. Highly recommend their services!",
+        name : "Ismail Munawar",
+        bio : "Marketing Manager",
+        rating : "4.8",
+        avatar : '/EAvatar.png'
+    },
+    {
+        content : "Our social media engagement went through the roof thanks to PageBuzz. Their innovative campaign brought us a 70% rise in engagement and a significant boost in online orders.",
+        name : "Meerub Khan",
+        bio : "Graphic Designer",
+        rating : "4.8",
+        avatar : "/FAvatar.png"
+    },
+    {
+        content : "Working with PageBuzz was a delight. Their content creation exceeded our expectations, increasing our website engagement by 60%. They truly understand our industry and audience.",
+        name : "Uzma Jhanagir",
+        bio : "Sales Executive",
+        rating : "4.8",
+        avatar : "/FAvatar.png"
     }
 ]
