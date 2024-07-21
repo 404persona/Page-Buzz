@@ -5,7 +5,7 @@ export const NavLinks = [
     },
     {
         label : "about us",
-        href : "/about-us"
+        href : "/about"
     },
     {
         label : "Services",
@@ -17,7 +17,7 @@ export const NavLinks = [
     },
     {
         label : "contact",
-        href : "/contact-us"
+        href : "/contact"
     },
 ]
 

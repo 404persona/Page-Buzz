@@ -37,7 +37,7 @@ const Footer = () => {
                         <div className='absoulte top-[-100px] overflow-hidden '>
                             <hr className='w-screen border-t-[2px]  border-[#1E1E21]' />
                             <div className='py-4 flex flex-col gap-2 text-center'>
-                                <p>Copyright 2024 PageBuzz</p>
+                                <p>Copyright &copy; 2024 PageBuzz</p>
                                 <p>Designed and Powered By <a href="https://github.com/404persona/Page-Buzz" className='underline cursor-pointer'>Anas Tanveer</a></p>
                             </div>
                             <hr className=' border-t-[2px]  border-[#1E1E21]' />

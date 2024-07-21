@@ -7,8 +7,8 @@ const Second = () => {
             <div className='md:px-28  md:py-8 md:mt-20'>
                 <div className='flex max-sm:flex-col justify-between items-center md:gap-20'>
                     <div className='flex  justify-center items-center md:w-[50%] max-sm:w-full h-[400px] max-sm:p-6 '>
-                        <div className='realtive'>
-                            <img src="/Secondbg.png" className='md:w-[550px] absolute md:top-[800px]  max-sm:w-[400px] max-sm:right-[10px] max-sm:h-[370px] md:left-[80px] max-sm:top-[950px]' />
+                        <div className='absolute'>
+                            <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[10px] max-sm:h-[370px] md:right-[px] max-sm:top-[950px]' />
                         </div>
                         <div className='relative flex justify-center items-center'>
                             <img src="/Second2.png" className=' md:w-[400px] md:h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl' />
@@ -43,11 +43,11 @@ const Second = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='py-2'>
+                            <div className=' py-2'>
                                 <div>
                                     <hr className='mx-1 border-t-[1px] py-1 border-[#1E1E21]' />
                                 </div>
-                                <div className='flex items-center max-sm:justify-center flex-wrap pt-2 gap-10'>
+                                <div className='flex items-center max-sm:justify-center max-sm:flex-wrap pt-2 gap-10'>
                                     <div className='flex items-center gap-2'>
                                         <img src="/SecondLogo/Logo4.png" className='w-[23.53px] h-[21px]' />
                                         <p className="font-bold">Logoipsum</p>

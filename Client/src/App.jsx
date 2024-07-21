@@ -1,21 +1,26 @@
-import React from 'react'
-import Header from './Components/Header/Header'
-import Home from './Components/Pages/Home/Home'
-import './App.css'
-import Footer from './Components/Footer/Footer'
-import { Outlet, Route, Router, Routes } from 'react-router-dom'
-import About from './Components/Pages/About/About'
-import { Analytics } from "@vercel/analytics/react"
+import React from 'react';
+import Header from './Components/Header/Header';
+import Home from './Components/Pages/Home/Home';
+import Footer from './Components/Footer/Footer';
+import About from './Components/Pages/About/About';
 import Layout from './Layout';
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
+    
     <div className='custom-scrollbar'>
-      <Header/>
-      <Home/>
-      <Footer/>
+        <Layout>
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        
+      </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
