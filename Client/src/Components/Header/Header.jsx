@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLinks } from './../../Data/Data';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -154,6 +154,7 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* <Outlet /> */}
     </div>
   );
 }

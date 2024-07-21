@@ -36,7 +36,7 @@ const MainVideo = () => {
             <div className='relative top-[130px]'>
                 <div>
                     <div className='flex justify-center items-center'>
-                        <div className='absolute top-[-400px] rounded-3xl border-[1px] border-green-500 md:p-6 max-sm:p-3'>
+                        <div className='absolute md:top-[-540px] rounded-3xl border-[1px] border-green-500 md:p-6 max-sm:p-3'>
                             <Suspense fallback={<div>Loading Video...</div>} >
                                 <video ref={videoRef} loop muted className='object-cover md:w-[900px] md:h-[400px] max-sm:h-[300px] rounded-3xl'>
                                     <source src="/Video3.mp4" preload='true' />
@@ -45,7 +45,7 @@ const MainVideo = () => {
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={togglePlayButton} className="absolute  transition-opacity hover:bg-green-500 rounded-full w-16 h-16 flex items-center justify-center top-[-265px]">
+                        <button onClick={togglePlayButton} className="absolute  transition-opacity hover:bg-green-500 rounded-full w-16 h-16 flex items-center justify-center top-[-340px]">
                             {isPlaying ? (
                                 <FaPlay className="text-white w-8 h-8" />
                             ) : (
