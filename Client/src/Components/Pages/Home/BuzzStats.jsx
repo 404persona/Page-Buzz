@@ -32,23 +32,19 @@ const Counter = ({ end, text, speed = 100 }) => {
 
 const BuzzStats = () => {
     return (
-        <div className='py-20'>
+        <div className='md:py-20 max-sm:py-10'>
             <div>
                 <div className='text-center'>
                     <h1 className='text-[3rem] bg-gradient-to-r from-white to-gray-600 text-transparent bg-clip-text font-medium'>Buzz Stats.</h1>
                 </div>
-                <div className="flex flex-wrap justify-center items-center py-10">
-                    {/* <Counter end={1200} text="Happy Clients" />
-                    <Counter end={850} text="Projects Completed" />
-                    <Counter end={1500} text="Campaigns Launched" /> */}
-                    {/* <p end={400} >{Counter}</p> */}
+                <div className="flex flex-wrap  justify-center items-center md:py-10 max-sm:py-8">
                     {StatsData.map((stats,index)=>(
                         <>
-                        <div className='flex px-10 justify-center '>
-                            <div key={index}className='w-[500px] h-[250px] flex flex-col justify-center gap-2 items-center hover:bg-[#1E1E21] p-4 rounded-3xl transition-all mb-4' >
-                                <p className='text-[3rem]'><Counter end={stats.limit} /></p>
-                                <p className='text-[2rem]'>{stats.title}</p>
-                                <p className='text-[#929292] w-[400px] text-center' >{stats.text}</p>
+                        <div className='flex md:px-10 max-sm:p-4 justify-center'>
+                            <div key={index} className='md:w-[500px] md:h-[250px] max-sm:w-[370px] flex flex-col justify-center gap-2 items-center hover:bg-[#1E1E21] md:p-4 rounded-3xl transition-all md:mb-4 max-sm:py-6 max-sm:px-4' >
+                                <p className='text-[3rem] max-sm:text-[2rem]'><Counter end={stats.limit} /></p>
+                                <p className='text-[1.8rem]'>{stats.title}</p>
+                                <p className='text-[#929292] md:w-[400px] text-center' >{stats.text}</p>
                             </div>
                         </div>
                         </>
