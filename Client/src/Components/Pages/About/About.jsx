@@ -2,6 +2,8 @@ import React from 'react'
 import Second from "../Home/Second"
 import OurVision from './OurVision'
 import OurMission from './OurMission'
+import Expertise from './Expertise'
+import OurTeam from './OurTeam'
 
 const About = () => {
   return (
@@ -28,6 +30,12 @@ const About = () => {
       </div>
       <div>
         <OurMission/>
+      </div>
+      <div>
+        <Expertise/>
+      </div>
+      <div>
+        <OurTeam/>
       </div>
     </div>
   )
