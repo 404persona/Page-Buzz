@@ -8,7 +8,7 @@ const Second = () => {
                 <div className='flex max-sm:flex-col justify-between items-center md:gap-20'>
                     <div className='flex  justify-center items-center md:w-[50%] max-sm:w-full h-[400px] max-sm:p-6 '>
                         <div className='absolute'>
-                            <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[10px] max-sm:h-[370px] md:right-[px] max-sm:top-[950px]' />
+                            <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[0px] max-sm:h-[370px] md:right-[px] max-sm:top-[-5px]' />
                         </div>
                         <div className='relative flex justify-center items-center'>
                             <img src="/Second2.png" className=' md:w-[400px] md:h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl' />

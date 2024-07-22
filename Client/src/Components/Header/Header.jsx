@@ -3,6 +3,7 @@ import { NavLinks } from './../../Data/Data';
 import { Link, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { RiMenu2Line } from "react-icons/ri";
 
 const textVariants = {
   hidden: { opacity: 0, transform: 'translateY(100px)' },
@@ -35,8 +36,8 @@ const menuVariants = {
     opacity: 1,
     transform: 'translateY(0px)',
     transition: {
-      delay: i * 0.13,
-      duration: .6,
+      delay: i * 0.1,
+      duration: .3,
       ease: [0.090, 0.515, 0.345, 1],
     },
   }),
@@ -68,7 +69,7 @@ const Header = () => {
 
   return (
     <div className='fixed w-full z-50'>
-      <div className='my-4 mx-4'>
+      <div className='md:my-4 md:mx-4 max-sm:my-2 max-sm:mx-2'>
         <nav
           ref={navbarRef}
           className={`bg-black/30 backdrop-blur-sm rounded-3xl flex justify-between px-4 md:px-20 items-center py-4 transition-all ${
@@ -108,7 +109,7 @@ const Header = () => {
           </div>
           <div className='md:hidden'>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='z-50'>
-              {isMenuOpen ? <FaTimes className='w-6 h-6 text-white' /> : <FaBars className='w-6 h-6 text-white' />}
+              {isMenuOpen ? < RiMenu2Line className='w-1 h-1 text-white' /> : < RiMenu2Line className='w-8 h-8 text-white font-bold' />}
             </button>
           </div>
         </nav>
@@ -120,19 +121,19 @@ const Header = () => {
             animate="visible"
             exit="exit"
             variants={menuVariants}
-            className="fixed top-0 left-0 w-screen h-screen bg-black/50 backdrop-blur-sm z-40 flex flex-col items-center"
+            className="fixed top-0 left-0 w-screen h-screen bg-black/30 backdrop-blur-sm z-40 flex flex-col items-center"
           >
             <button
               onClick={() => setIsMenuOpen(false)}
-              className='absolute top-4 right-4 z-50'
+              className='absolute top-8 right-7  z-50'
             >
-              <FaTimes className='w-6 h-6 text-white overflow-hidden' />
+              <FaTimes className='w-8 h-8 text-white overflow-hidden' />
             </button>
             <ul className='flex flex-col items-center py-4 my-auto  overflow-hidden'>
               {NavLinks.map((links, index) => (
                 <Link
                   key={index}
-                  className='uppercase font-medium py-4  text-[2.5rem] overflow-hidden'
+                  className='uppercase font-medium py-3  text-[2.2rem] overflow-hidden'
                   to={links.href}
                   onClick={() => setIsMenuOpen(false)}
                 >

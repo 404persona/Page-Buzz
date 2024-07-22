@@ -4,7 +4,6 @@ import Second from "../Home/Second"
 const About = () => {
   return (
     <div className=''>
-      
       <div style={{
         backgroundImage: 'url(/AllPagesBg.png)',
         // backgroundSize : '100%'

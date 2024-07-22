@@ -33,7 +33,7 @@ const MainVideo = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative top-[130px]'>
+            <div className='relative max-sm:top-[-150px] md:top-[130px]'>
                 <div>
                     <div className='flex justify-center items-center'>
                         <div className='absolute md:top-[-540px] rounded-3xl border-[1px] border-green-500 md:p-6 max-sm:p-3'>
@@ -45,7 +45,7 @@ const MainVideo = () => {
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={togglePlayButton} className="absolute  transition-opacity hover:bg-green-500 rounded-full w-16 h-16 flex items-center justify-center top-[-340px]">
+                        <button onClick={togglePlayButton} className="absolute  transition-opacity hover:bg-green-500 rounded-full w-16 h-16 flex items-center justify-center top-[-40px]">
                             {isPlaying ? (
                                 <FaPlay className="text-white w-8 h-8" />
                             ) : (
