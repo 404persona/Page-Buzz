@@ -1,5 +1,7 @@
 import React from 'react'
 import Second from "../Home/Second"
+import OurVision from './OurVision'
+import OurMission from './OurMission'
 
 const About = () => {
   return (
@@ -20,6 +22,12 @@ const About = () => {
       <div className='py-10'>
         <Second/> 
         {/* this component is from the Home page components */}
+      </div>
+      <div>
+        <OurVision/>
+      </div>
+      <div>
+        <OurMission/>
       </div>
     </div>
   )

@@ -23,8 +23,8 @@ const textVariantsMobile = {
     opacity: 1,
     transform: 'translateY(0px)',
     transition: {
-      delay: i * .189,
-      duration: 1.5,
+      delay: i * .19,
+      duration: 1,
       ease: [0.090, 0.515, 0.345, 1],
     },
   }),
@@ -72,7 +72,7 @@ const Header = () => {
       <div className='md:my-4 md:mx-4 max-sm:my-2 max-sm:mx-2'>
         <nav
           ref={navbarRef}
-          className={`bg-black/30 backdrop-blur-sm rounded-3xl flex justify-between px-4 md:px-20 items-center py-4 transition-all ${
+          className={`bg-black/30 backdrop-blur-sm rounded-3xl flex justify-between px-6 md:px-20 items-center max-sm:py-4 md:py-4 transition-all ${
             isScrolled ? 'bg-black/30' : 'bg-transparent backdrop-blur-0'
           }`}
         >
