@@ -171,3 +171,33 @@ export const TestimonialsData = [
         avatar : "/FAvatar.png"
     }
 ]
+
+export const OurTeamData = [
+    {
+        // dp : "https://cdn.pixabay.com/photo/2021/09/02/10/00/businessman-6593090_1280.png",
+        dp : "https://cdn.pixabay.com/photo/2024/07/21/09/00/accuracy-8909839_640.png",
+        name : "Anas Ahmad",
+        position : "Chief Executive Officer",
+        linkedIn : "https://linkedin.com"
+    },
+    {
+        name : "Ali Raza",
+        dp : "https://cdn.pixabay.com/photo/2024/06/26/08/10/business-8854289_640.png",
+        position : "Cheif Technollogy Officer",
+        linkedIn : "https://linkedin.com"
+
+    },
+    {
+        // dp : "https://cdn.pixabay.com/photo/2024/05/07/11/00/ai-generated-8745444_640.png",
+        dp : "https://cdn.pixabay.com/photo/2024/05/01/15/03/woman-8732498_640.png",
+        name : "Zara",
+        position : "Creative Director",
+        linkedIn : "https://linkedin.com"
+    },
+    {
+        dp : "https://cdn.pixabay.com/photo/2024/02/14/09/23/programmer-8572925_1280.png",
+        name : "Taimour",
+        position : "Lead Web Developer",
+        linkedIn : "https://linkedin.com"
+    }
+]

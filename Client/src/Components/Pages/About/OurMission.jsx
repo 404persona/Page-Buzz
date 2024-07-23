@@ -11,8 +11,8 @@ const OurMission = () => {
                         <div>Our Mission</div>
                         <div className='bg-green-500 w-[20px] h-[6px] rounded-full'></div>
                     </div>
-                    <div className='w-[650px] text-center'>
-                        <h1 className='text-[3rem]'>Transforming Visions into Digital Reality</h1>
+                    <div className='md:w-[650px] text-center'>
+                        <h1 className='text-[3rem] max-sm:text-[3rem] leading-tight'>Transforming Visions into Digital Reality</h1>
                     </div>
                 </div>
                 <div className='relative top-[170px]'>

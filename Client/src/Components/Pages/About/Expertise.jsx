@@ -37,7 +37,7 @@ const Expertise = () => {
             <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[0px] max-sm:h-[370px] md:right-[px] max-sm:top-[-5px]' />
           </div>
           <div className='relative flex justify-center items-center'>
-            <img src="/Second2.png" className=' md:w-[400px] md:h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl' />
+            <img src="/Second2.png" className=' md:w-[400px] md:h-[400px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl' />
           </div>
         </div>
         <div className='md:w-[50%] p-2 max-sm:p-6  h-[400px] flex items-center'>
