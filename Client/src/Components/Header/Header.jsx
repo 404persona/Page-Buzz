@@ -72,9 +72,8 @@ const Header = () => {
       <div className='md:my-4 md:mx-4 max-sm:my-2 max-sm:mx-2'>
         <nav
           ref={navbarRef}
-          className={`bg-black/30 backdrop-blur-sm rounded-3xl flex justify-between px-6 md:px-20 items-center max-sm:py-4 md:py-4 transition-all ${
-            isScrolled ? 'bg-black/30' : 'bg-transparent backdrop-blur-0'
-          }`}
+          className={`bg-black/30  rounded-3xl flex justify-between px-6 md:px-20 items-center max-sm:py-4 md:py-4 transition-all ${isScrolled ? 'bg-black/30 backdrop-blur-sm' : 'bg-transparent backdrop-blur-0'
+            }`}
         >
           <div>
             <Link to='/'>
@@ -155,7 +154,6 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      {/* <Outlet /> */}
     </div>
   );
 }

@@ -4,6 +4,8 @@ import OurVision from './OurVision'
 import OurMission from './OurMission'
 import Expertise from './Expertise'
 import OurTeam from './OurTeam'
+import BuzzStats from './../Home/BuzzStats';
+import GetUsBetter from './GetUsBetter'
 
 const About = () => {
   return (
@@ -36,6 +38,12 @@ const About = () => {
       </div>
       <div>
         <OurTeam/>
+      </div>
+      <div>
+        <BuzzStats/>
+      </div>
+      <div>
+        <GetUsBetter/>
       </div>
     </div>
   )

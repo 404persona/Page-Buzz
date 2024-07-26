@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import { GiDiamonds } from "react-icons/gi";
 import Second from './Second';
-import Services from './Services';
+import Services from './OurServices';
 import MainVideo from './MainVideo';
 import WhyCUS from './WhyCUS';
 import FeaturedProjects from './FeaturedProjects';

@@ -201,3 +201,21 @@ export const OurTeamData = [
         linkedIn : "https://linkedin.com"
     }
 ]
+
+export const GetToKnow = [
+    {
+        number : "(001)",
+        title : "Our Success Stories",
+        text : "view case studies"
+    },
+    {
+        number : "(002)",
+        title : "Join Our Community",
+        text : "Contact us"
+    },
+    {
+        number : "(003)",
+        title : "See Our Impact",
+        text : "Explore projects"
+    }
+]

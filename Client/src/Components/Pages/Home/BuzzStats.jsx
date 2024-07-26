@@ -32,7 +32,7 @@ const Counter = ({ end, text, speed = 100 }) => {
 
 const BuzzStats = () => {
     return (
-        <div className='md:py-20 max-sm:py-10'>
+        <div className='md:py-10 max-sm:py-10'>
             <div>
                 <div className='text-center'>
                     <h1 className='text-[3rem] bg-gradient-to-r from-white to-gray-600 text-transparent bg-clip-text font-medium'>Buzz Stats.</h1>
