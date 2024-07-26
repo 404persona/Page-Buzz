@@ -7,6 +7,7 @@ PORT = process.env.PORT || 3000
 
 Server.get('/', (req,res)=>{
     res.send('Hello World!')
+    console.log('Hello World')
 })
 
 
