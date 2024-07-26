@@ -10,6 +10,7 @@ import GetUsBetter from './GetUsBetter'
 const About = () => {
   return (
     <div className=''>
+      <div className='md:p-12'>
       <div style={{
         backgroundImage: 'url(/AllPagesBg.png)',
         // backgroundSize : '100%'
@@ -22,6 +23,7 @@ const About = () => {
             <h1 className='text-[4rem] max-sm:text-[3rem] font-medium bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text'>About Us</h1>
           </div>
         </div>
+      </div>
       </div>
       <div className='py-10'>
         <Second/> 
