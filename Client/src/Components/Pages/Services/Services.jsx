@@ -1,6 +1,9 @@
 import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 import WhyCUS from './../Home/WhyCUS';
+import OurValue from './OurValue';
+import PricingPlans from './PricingPlans';
+import HowItWorks from './HowItWorks';
 
 const Services = () => {
   return (
@@ -68,10 +71,10 @@ const Services = () => {
       <div className='relative py-20 overflow-x-hidden'>
         {/* Green Blur Elements */}
         <div className='absolute inset-0 z-0'>
-          <div className='absolute top-[50%] right-[1000px] transform -translate-x-1/2 -translate-y-1/2'>
+          <div className='absolute top-[20%] right-[1000px] transform -translate-x-1/2 -translate-y-1/2'>
             <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[100px] rounded-full'></div>
           </div>
-          <div className='absolute top-[10%] md:right-[-350px] max-sm:left-[300px] transform -translate-x-1/2 -translate-y-1/2'>
+          <div className='absolute top-[5%] md:right-[-350px] max-sm:left-[300px] transform -translate-x-1/2 -translate-y-1/2'>
             <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[100px] rounded-full'></div>
           </div>
         </div>
@@ -96,11 +99,16 @@ const Services = () => {
           </div>
           <WhyCUS />
         </div>
+        <div>
+          <OurValue />
+        </div>
+        <div>
+          <PricingPlans />
+        </div>
+        <div>
+          <HowItWorks />
+        </div>
       </div>
-
-      
-        
-   
     </div>
   )
 }

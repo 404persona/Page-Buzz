@@ -122,6 +122,10 @@ const Header = () => {
             variants={menuVariants}
             className="fixed top-0 left-0 w-screen h-screen bg-black/30 backdrop-blur-sm z-40 flex flex-col items-center"
           >
+            <div className='flex justify-start items-start'>
+              <h1 className='uppercase text-left text-[2.3rem]'>PageBuzz</h1>
+
+            </div>
             <button
               onClick={() => setIsMenuOpen(false)}
               className='absolute top-8 right-7  z-50'

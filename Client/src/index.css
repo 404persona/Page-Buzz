@@ -13,3 +13,10 @@ html, body{
     color: white;
     /* z-index: -999; */
 }
+.details li{
+    list-style: disc;
+}
+.details li::marker{
+    color : #22C55E;
+    font-size: 25px;
+}
