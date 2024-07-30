@@ -4,7 +4,7 @@ import { WhyChooseUsCards } from '../../../Data/Data'
 const OurMission = () => {
     return (
         <div>
-            <div className='py-20'>
+            <div className='py-20 '>
                 <div className='flex flex-col justify-center items-center gap-4'>
                     <div className='flex items-center gap-4'>
                         <div className='bg-green-500 w-[20px] h-[6px] rounded-full'></div>
@@ -12,7 +12,7 @@ const OurMission = () => {
                         <div className='bg-green-500 w-[20px] h-[6px] rounded-full'></div>
                     </div>
                     <div className='md:w-[650px] text-center'>
-                        <h1 className='text-[3rem] max-sm:text-[3rem] leading-tight'>Transforming Visions into Digital Reality</h1>
+                        <h1 className='text-[3rem] max-sm:text-[2rem]  leading-tight'>Transforming Visions into Digital Reality</h1>
                     </div>
                 </div>
                 <div className='relative top-[170px]'>
