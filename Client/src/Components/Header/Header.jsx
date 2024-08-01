@@ -3,7 +3,7 @@ import { NavLinks } from './../../Data/Data';
 import { Link, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { RiMenu2Line } from "react-icons/ri";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 const textVariants = {
   hidden: { opacity: 0, transform: 'translateY(100px)' },
@@ -108,7 +108,7 @@ const Header = () => {
           </div>
           <div className='md:hidden'>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='z-50'>
-              {isMenuOpen ? < RiMenu2Line className='w-1 h-1 text-white' /> : < RiMenu2Line className='w-8 h-8 text-white font-bold' />}
+              {isMenuOpen ? < HiOutlineMenuAlt1  className='w-1 h-1 text-white' /> : < HiOutlineMenuAlt1  className='w-10 h-10 text-white font-bold' />}
             </button>
           </div>
         </nav>

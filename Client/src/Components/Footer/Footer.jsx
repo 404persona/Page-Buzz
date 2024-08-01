@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
             <div className='pt-[100px] md:px-20'>
                 <div className='max-sm:p-3 max-sm:py-4 max-sm:m-4 border-[1px] border-green-500 md:p-4 rounded-2xl'>
-                    <div className='flex flex-col justify-center items-center bg-[#1E1E21] md:p-6 max-sm:p-2 rounded-2xl'>
+                    <div className='flex flex-col justify-center items-center gap-3 max-sm:pt-6 bg-[#1E1E21] md:p-6 max-sm:p-2 rounded-2xl'>
                         <div className='flex justify-center items-center gap-3'>
                             <div className='w-[20px] h-[6px] bg-green-500 rounded-full'></div>
                             <p>Avaliable for New Project</p>

@@ -3,7 +3,7 @@ import React from 'react'
 const OurValue = () => {
     return (
         <div>
-            <div className='md:px-28  md:py-8 md:mt-20'>
+            <div className='md:px-28 max-sm:py-20     md:py-8 md:mt-20'>
                 <div className='flex max-sm:flex-col md:flex-row-reverse justify-between items-center md:gap-20'>
                     <div className='flex  justify-center items-center md:w-[50%] max-sm:w-full h-[400px] max-sm:p-6 '>
                         <div className='absolute'>

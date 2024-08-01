@@ -70,12 +70,12 @@ const Services = () => {
       </div>
       <div className='relative md:py-20 max-sm:py-10 '>
         {/* Green Blur Elements */}
-        <div className='absolute inset-0 z-0'>
-          <div className='absolute md:top-[20%] max-sm:top-[600px] md:right-[1000px] transform -translate-x-1/2 -translate-y-1/2'>
-            <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[100px] rounded-full'></div>
+        <div className='absolute  z-0'>
+          <div className='absolute md:top-[10%] max-sm:top-[600px] md:left-[1250px] transform -translate-x-1/2 -translate-y-1/2'>
+            <div className='md:w-[400px] md:h-[400px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[150px] rounded-full'></div>
           </div>
-          <div className='absolute md:top-[5%] md:right-[-350px] max-sm:left-[300px] transform -translate-x-1/2 -translate-y-1/2'>
-            <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[100px] rounded-full'></div>
+          <div className='absolute md:top-[800px] md:right-[-350px] max-sm:left-[300px] transform -translate-x-1/2 -translate-y-1/2'>
+            <div className='md:w-[400px] md:h-[400px] max-sm:w-[200px] max-sm:h-[200px] bg-green-500/30 blur-[150px] rounded-full'></div>
           </div>
         </div>
 

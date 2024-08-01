@@ -272,16 +272,19 @@ export const PricingData = [
 ];
 
 export const HowItWorksData = [
-    {
-        title : "Consultation and Strategy",
-        text : "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac."
-    },
-    {
-        title : "Implementation and Developement",
-        text : "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac."
-    },
-    {
-        title : "Monitoring and Optimization",
-        text : "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac."
-    },
-]
+  {
+    buttonText: "Step 1",
+    title: "Consultation and Strategy",
+    text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
+  },
+  {
+    buttonText : "Step 2",
+    title: "Implementation and Developement",
+    text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
+  },
+  {
+    buttonText : "Step 3",
+    title: "Monitoring and Optimization",
+    text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
+  },
+];
