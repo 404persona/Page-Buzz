@@ -278,13 +278,34 @@ export const HowItWorksData = [
     text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
   },
   {
-    buttonText : "Step 2",
+    buttonText: "Step 2",
     title: "Implementation and Developement",
     text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
   },
   {
-    buttonText : "Step 3",
+    buttonText: "Step 3",
     title: "Monitoring and Optimization",
     text: "Vel sed est pulvinar lobortis bibendum pharetra. Montes quisque in eget sed etiam placerat a et tortor. Habitasse nibh amet dolor vel. Urna integer et lorem tellus a orci mattis purus vel ac.",
+  },
+];
+
+export const ServicesData = [
+  {
+    title: "Web Development",
+    slug: "website-development",
+    FirstTitle: "Unlock Your Business Potential With Catchy Web Design",
+    content1:
+      "At PageBuzz, we understand that digital marketing is the key to unlocking your business's potential in the online world. Our comprehensive digital marketing services are designed to increase your brand visibility, drive targeted traffic, and boost conversions. With our expertise, we create customized strategies that align with your business goals and resonate with your audience.",
+    content2:
+      "Website development is the process of creating, building, and maintaining websites and web applications. It involves a blend of design, programming, and database management to produce interactive online experiences. This multifaceted field encompasses both front-end development, focusing on the visual elements and user interface, and back-end development, handling the server-side logic and database interactions. By combining these elements, web developers bring websites to life, delivering engaging and functional platforms for individuals and businesses alike.",
+    SecondTitle: "Comprehensive Website Development Solutions",
+    content3: `
+    <ul>
+    <li>Website development encompasses the creation and maintenance of online platforms.</li>
+    <li>It involves a collaborative process between designers, programmers, and database experts.</li>
+    <li>This field focuses on crafting user-friendly interfaces and ensuring seamless functionality.</li>
+    <li>Website development is essential for businesses to establish a strong online presence.</li>
+    </ul>
+    `,
   },
 ];

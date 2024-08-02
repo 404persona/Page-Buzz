@@ -23,30 +23,30 @@ const Expertise = () => {
     }
 
     return () => {
-      if (observer && observer.unobserve) {
+      if (observer && observer.unobserve && counterRef.current) {
         observer.unobserve(counterRef.current);
       }
     };
-  }, []);
+  }, [counterRef.current]);
 
   return (
-    <div className='md:px-28  md:py-8 md:mt-20'>
-      <div className='flex max-sm:flex-col md:flex-row-reverse justify-between items-center md:gap-20'>
-        <div className='flex  justify-center items-center md:w-[50%] max-sm:w-full h-[400px] max-sm:p-6 '>
-          <div className='absolute'>
-            <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[0px] max-sm:h-[370px] md:right-[px] max-sm:top-[-5px]' />
+    <div className='md:px-28  md:py-8 md:mt-20'>
+      <div className='flex max-sm:flex-col md:flex-row-reverse justify-between items-center md:gap-28'>
+        <div className='flex  justify-center items-center md:w-[50%] max-sm:w-full h-[400px] max-sm:p-4 '>
+          <div className='absolute flex justify-center items-center'>
+            <img src="/Secondbg.png" className='md:w-[550px] relative md:top-0  max-sm:w-[400px] max-sm:right-[7px] max-sm:h-[370px] md:right-[80px] max-sm:top-[-5px]' />
           </div>
-          <div className='relative flex justify-center items-center'>
+          <div className='relative flex justify-center items-center max-sm:left-[40px]'>
             <img src="/Second2.png" className=' md:w-[400px] md:h-[400px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl' />
           </div>
         </div>
-        <div className='md:w-[50%] p-2 max-sm:p-6  h-[400px] flex items-center'>
+        <div className='md:w-[50%] p-2 max-sm:p-6  h-[400px] flex items-center'>
           <div className='flex flex-col gap-2 max-sm:pt-10' ref={counterRef}>
             <div className='flex items-center gap-2'>
               <div className='w-[20px] h-[6px] rounded-full bg-green-500' ></div>
               <p>Expertise</p>
             </div>
-            <h2 className='md:text-[3rem] max-sm:text-[2.7rem] text-wrap  tracking-tighter leading-[1]'>Mastering the Art of Digital Solutions</h2>
+            <h2 className='md:text-[3rem] max-sm:text-[2.7rem] text-wrap  tracking-tighter leading-[1]'>Mastering the Art of Digital Solutions</h2>
             <p className='text-[#929292]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem odit, quod totam rem distinctio aut est sint facilis! Consequatur?</p>
             <div>
               <div>

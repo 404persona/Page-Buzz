@@ -11,7 +11,7 @@ const Hero = () => {
       y: 0, 
       transition: {
         delay: 0.2,
-        duration: 1.5,
+        duration: .1,
         ease: [0.090, 0.515, 0.345, 1],
       }
     },
@@ -37,14 +37,14 @@ const Hero = () => {
                 <p>PageBuzz</p>
               </div>
               <div className="md:text-[3rem] max-sm:text-[2.5rem] md:w-[500px] md:font-medium bg-clip-text text-transparent leading-tight bg-gradient-to-r from-white to-gray-500">
-                <motion.span
+                <motion.div
                   initial="hidden"
                   animate="visible"
-                  variants={textVariants}
+                  // variants={textVariants}
                   className='overflow-hidden'
                 >
                   {Herotext.map((text) => text.word).join(' ')}
-                </motion.span>
+                </motion.div>
               </div>
               <div className="md:w-[500px] md:text-justify md:leading-tight md:tracking-tight text-[#929292]">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut nam aliquid tempore ex officia, odit inventore molestias sequi voluptatem exercitationem adipisci dignissimos, ullam consequuntur?</p>

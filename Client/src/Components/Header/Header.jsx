@@ -108,7 +108,7 @@ const Header = () => {
           </div>
           <div className='md:hidden'>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='z-50'>
-              {isMenuOpen ? < HiOutlineMenuAlt1  className='w-1 h-1 text-white' /> : < HiOutlineMenuAlt1  className='w-10 h-10 text-white font-bold' />}
+              {isMenuOpen ? < HiOutlineMenuAlt1 className='w-1 h-1 text-white' /> : < HiOutlineMenuAlt1 className='w-10 h-10 text-white font-bold' />}
             </button>
           </div>
         </nav>
@@ -122,16 +122,15 @@ const Header = () => {
             variants={menuVariants}
             className="fixed top-0 left-0 w-screen h-screen bg-black/30 backdrop-blur-sm z-40 flex flex-col items-center"
           >
-            <div className='flex justify-start items-start'>
-              <h1 className='uppercase text-left text-[2.3rem]'>PageBuzz</h1>
-
+            <div >
+              {/* <h1 className='uppercase text-right text-[2.3rem]'>PageBuzz</h1> */}
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className='absolute top-8 right-7  z-50'
+              >
+                <FaTimes className='w-8 h-8 text-white overflow-hidden' />
+              </button>
             </div>
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className='absolute top-8 right-7  z-50'
-            >
-              <FaTimes className='w-8 h-8 text-white overflow-hidden' />
-            </button>
             <ul className='flex flex-col items-center py-4 my-auto  overflow-hidden'>
               {NavLinks.map((links, index) => (
                 <Link
