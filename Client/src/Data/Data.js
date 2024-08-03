@@ -308,4 +308,80 @@ export const ServicesData = [
     </ul>
     `,
   },
+  {
+    title: "Digital Marketing",
+    slug: "digital-marketing",
+    FirstTitle: "Elevate Your Brand with Cutting-Edge Digital Marketing",
+    content1:
+      "In today's digital age, a strong online presence is essential for business success. Our comprehensive digital marketing services help you reach your target audience, build brand awareness, and drive conversions. We combine data-driven strategies with creative execution to deliver measurable results.",
+    content2:
+      "Digital marketing encompasses a wide range of online activities aimed at promoting a brand or product. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing and content creation, we offer tailored solutions to meet your unique business needs.",
+    SecondTitle: "Comprehensive Digital Marketing Services",
+    content3: `
+    <ul>
+    <li>Search Engine Optimization (SEO)</li>
+    <li>Pay-Per-Click (PPC) Advertising</li>
+    <li>Social Media Marketing</li>
+    <li>Content Marketing</li>
+    <li>Email Marketing</li>
+    <li>Analytics and Reporting</li>
+    </ul>
+    `,
+  },
+  {
+    title: "SEO Optimization",
+    slug: "seo-optimization",
+    FirstTitle: "Boost Your Online Visibility with Expert SEO",
+    content1:
+      "Improve your website's ranking on search engine results pages (SERPs) with our effective SEO strategies. We help you optimize your website content, structure, and technical elements to attract organic traffic and achieve higher visibility.",
+    content2:
+      "Search Engine Optimization (SEO) is the process of improving your website's ranking on search engine results pages. It involves a combination of on-page optimization, off-page optimization, and technical SEO. Our experts will conduct a thorough analysis of your website and competitors to develop a customized SEO plan.",
+    SecondTitle: "Key Benefits of Our SEO Services",
+    content3: `
+    <ul>
+    <li>Increased organic traffic</li>
+    <li>Improved search engine rankings</li>
+    <li>Enhanced website authority</li>
+    <li>Higher conversion rates</li>
+    <li>Better return on investment (ROI)</li>
+    </ul>
+    `,
+  },
+  {
+    title: "Social Media Management",
+    slug: "social-media-management",
+    FirstTitle: "Engage Your Audience with Effective Social Media Management",
+    content1:
+      "Build a strong online community and connect with your target audience through our social media management services. We develop and implement engaging content, manage your social media channels, and analyze performance metrics to drive growth.",
+    content2:
+      "Social media management involves creating, scheduling, and publishing content across various social platforms. Our team of experts will help you identify the right platforms for your business, develop a content calendar, and engage with your audience in a meaningful way.",
+    SecondTitle: "Our Social Media Management Services Include",
+    content3: `
+    <ul>
+    <li>Social media strategy development</li>
+    <li>Content creation and curation</li>
+    <li>Community management</li>
+    <li>Social media advertising</li>
+    <li>Performance analytics and reporting</li>
+    </ul>
+    `,
+  },
 ];
+
+export const ProvenResultsCardsData = [
+  {
+    title : "E-commerce Success",
+    content : "Ecommerce success hinges on understanding customers, offering compelling products, optimizing website experience, leveraging digital marketing, and providing exceptional customer service.",
+    bgImage : "https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png"
+  },
+  {
+    title : "Healthcare Engagement",
+    content : "Healthcare engagement fosters patient empowerment, improves health outcomes, enhances communication, builds trust, and drives value-based care delivery.",
+    bgImage : "https://cdn.pixabay.com/photo/2020/08/03/09/39/medical-5459631_1280.png"
+  },
+  {
+    title : "B2B Growth",
+    content : "B2B growth thrives on deep customer understanding, strategic partnerships, innovative solutions, robust sales enablement, and data-driven decision making.",
+    bgImage : "https://cdn.pixabay.com/photo/2019/04/29/16/11/work-4166471_1280.png"
+  }
+]

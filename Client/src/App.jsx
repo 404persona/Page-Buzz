@@ -5,6 +5,7 @@ import Home from './Components/Pages/Home/Home';
 import About from './Components/Pages/About/About';
 import Services from './Components/Pages/Services/Services';
 import Footer from './Components/Footer/Footer';
+import ServicesDetail from './Components/Pages/Services/Services Details/ServicesDetail';
 import './App.css';
 
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />
+            <Route  path='/services/:slug' element={<ServicesDetail/>}/>
           </Routes>
         </Suspense>
         <Footer />

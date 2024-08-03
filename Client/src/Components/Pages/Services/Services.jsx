@@ -4,8 +4,14 @@ import WhyCUS from './../Home/WhyCUS';
 import OurValue from './OurValue';
 import PricingPlans from './PricingPlans';
 import HowItWorks from './HowItWorks';
+import {useNavigate} from "react-router-dom"
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (slug) => {
+    navigate(`/services/${slug}`);
+  };
   return (
     <div className='max-sm:py-20 overflow-hidden'>
       <div className='md:p-12 z-10'>
@@ -23,7 +29,7 @@ const Services = () => {
         </div>
       </div>
       <div className='md:px-10 md:py-10 max-sm:py-6 z-10'>
-        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+        <div   onClick={() => handleClick('website-development')} className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center max-sm:gap-1 md:gap-6 '>
               <h1 className='text-[2.8rem] max-sm:text-[2rem]'>Website Development</h1>
@@ -34,7 +40,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all' onClick={() => handleClick('digital-marketing')} >
           <div className=' flex items-center flex-row-reverse justify-between '>
             <div className='flex items-center max-sm:gap-2 md:gap-6'>
               <h1 className='text-[2.8rem] max-sm:text-[2rem] text-wrap max-sm:w-[200px] text-end'>Digital Marketing</h1>
@@ -45,7 +51,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all' onClick={() => handleClick('seo-optimization')} >
           <div className='flex items-center  justify-between'>
             <div className='flex items-center md:gap-6 '>
               <h1 className='text-[2.8rem] max-sm:text-[2rem] max-sm:w-[200px]'>SEO Optimization</h1>
@@ -56,7 +62,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+        <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all' onClick={() => handleClick('social-media-management')} >
           <div className='flex items-center flex-row-reverse  justify-between'>
             <div className='flex items-center md:gap-6 '>
               <h1 className='text-[2.8rem] max-sm:text-[2rem] text-wrap max-sm:w-[250px] text-end'>Social Media Management</h1>
