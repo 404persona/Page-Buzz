@@ -12,8 +12,8 @@ export const NavLinks = [
     href: "/services",
   },
   {
-    label: "page",
-    href: "/page",
+    label: "projects",
+    href: "/projects",
   },
   {
     label: "contact",
@@ -383,5 +383,51 @@ export const ProvenResultsCardsData = [
     title : "B2B Growth",
     content : "B2B growth thrives on deep customer understanding, strategic partnerships, innovative solutions, robust sales enablement, and data-driven decision making.",
     bgImage : "https://cdn.pixabay.com/photo/2019/04/29/16/11/work-4166471_1280.png"
+  }
+]
+
+export const ServiceBenefitsData = [
+  {
+    title : "Enhanced Visibility",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  },
+  {
+    title : "Targeted Traffic",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  },
+  {
+    title : "Increased Conversions",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  },
+  {
+    title : "Brand Authority",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  },
+  {
+    title : "Measurable ROI",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  },
+  {
+    title : "Customer Engagement",
+    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+  }
+]
+
+export const CategoryData = [
+  {
+    title : "Website Development",
+    image : "https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_1280.png"
+  },
+  {
+    title : "Digital Marketing",
+    image : "https://cdn.pixabay.com/photo/2022/03/30/09/09/icon-7100795_1280.jpg"
+  },
+  {
+    title : "SEO Optimization",
+    image : "https://cdn.pixabay.com/photo/2022/03/26/02/11/seo-7092128_1280.png"
+  },
+  {
+    title : "Social Media Management",
+    image : "https://cdn.pixabay.com/photo/2014/08/22/15/27/facebook-424521_1280.jpg"
   }
 ]

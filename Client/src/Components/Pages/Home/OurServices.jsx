@@ -1,7 +1,14 @@
 import React from 'react'
 import { FiArrowRight } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+    const navigate = useNavigate();
+  
+
+  const handleClick = (slug) => {
+    navigate(`/services/${slug}`);
+  };
     return (
         <div className='max-sm:pt-[200px] '>
             <div className='flex justify-between items-center md:px-20 max-sm:px-6 pt-6 pb-6'>
@@ -16,7 +23,7 @@ const Services = () => {
             </div>
            <div className='md:px-10'>
            <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between'  onClick={() => handleClick('website-development')} >
                     <div className='flex items-center max-sm:gap-1 md:gap-6 '>
                         <h1 className='text-[2.8rem] max-sm:text-[2rem]'>Website Development</h1>
                         <FiArrowRight className='text-[2.5rem] max-sm:hidden' />
@@ -27,7 +34,7 @@ const Services = () => {
                 </div>
             </div>
            <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
-                <div className=' flex items-center flex-row-reverse justify-between '>
+                <div className=' flex items-center flex-row-reverse justify-between '  onClick={() => handleClick('digital-marketing')}>
                     <div className='flex items-center max-sm:gap-2 md:gap-6'>
                         <h1 className='text-[2.8rem] max-sm:text-[2rem] text-wrap max-sm:w-[200px] text-end'>Digital Marketing</h1>
                         <FiArrowRight className='text-[2.5rem] max-sm:hidden' />
@@ -37,7 +44,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-           <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+           <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'  onClick={() => handleClick('seo-optimization')}>
                 <div className='flex items-center  justify-between'>
                     <div className='flex items-center md:gap-6 '>
                         <h1 className='text-[2.8rem] max-sm:text-[2rem] max-sm:w-[200px]'>SEO Optimization</h1>
@@ -48,7 +55,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-           <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'>
+           <div className='md:px-20 max-sm:p-6 max-sm:m-3 py-10 my-6 border-[1.5px] border-[#1E1E21] rounded-3xl hover:border-green-500 cursor-pointer transition-all'  onClick={() => handleClick('social-media-management')}>
                 <div className='flex items-center flex-row-reverse  justify-between'>
                     <div className='flex items-center md:gap-6 '>
                         <h1 className='text-[2.8rem] max-sm:text-[2rem] text-wrap max-sm:w-[250px] text-end'>Social Media Management</h1>

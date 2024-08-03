@@ -2,6 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ServicesData } from '../../../../Data/Data';
 import ProvenResults from './ProvenResults';
+import Testimonials from '../../Home/Testimonials';
+import ServiceBenefits from './ServiceBenefits';
+import OurServices from "../../Home/OurServices"
 
 const ServiceDetail = () => {
   const { slug } = useParams();
@@ -22,21 +25,21 @@ const ServiceDetail = () => {
           </div>
           <div>
             <div className='h-[300px] flex justify-center items-center'>
-              <h1 className='text-[4rem] max-sm:text-[3rem] font-medium bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text'>Services Details</h1>
+              <h1 className='text-[4rem] max-sm:text-[2.5rem] font-medium bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text'>Services Details</h1>
             </div>
           </div>
         </div>
       </div>
-      <div className='px-14 py-14'>
-      <div className='flex gap-20'>
+      <div className='  py-14'>
+      <div className= 'md:px-14 max-sm:px-6 flex max-sm:flex-col gap-20'>
       <div>
-        <h2 className='md:text-[2.2rem] text-wrap leading-tight'>{service.FirstTitle}</h2>
+        <h2 className='md:text-[2.2rem] max-sm:text-[2rem] text-wrap leading-tight'>{service.FirstTitle}</h2>
         <div className='text-[#929292]'>
         <p className='py-2'>{service.content1}</p>
         <p>{service.content2}</p>
         </div>
         <br />
-        <h2 className='text-[2.2rem] leading-tight'>{service.SecondTitle}</h2>
+        <h2 className='text-[2.2rem] max-sm:text-[2rem] leading-tight'>{service.SecondTitle}</h2>
         <div className='details leading-loose  md:px-10 max-sm:px-4 text-[#929292]' dangerouslySetInnerHTML={{ __html: service.content3 }} />
       </div>
       {/* This Block has to linked to the Meeting Page for Contact  */}
@@ -51,6 +54,15 @@ const ServiceDetail = () => {
       </div>
       <div>
         <ProvenResults/>
+      </div>
+      <div>
+        <Testimonials/>
+      </div>
+      <div>
+        <ServiceBenefits/>
+      </div>
+      <div>
+        <OurServices/>
       </div>
       </div>
     </div>

@@ -5,9 +5,11 @@ import OurValue from './OurValue';
 import PricingPlans from './PricingPlans';
 import HowItWorks from './HowItWorks';
 import {useNavigate} from "react-router-dom"
+// import OurServices from "../Home/OurServices"
 
 const Services = () => {
   const navigate = useNavigate();
+  
 
   const handleClick = (slug) => {
     navigate(`/services/${slug}`);
@@ -114,6 +116,9 @@ const Services = () => {
         <div>
           <HowItWorks />
         </div>
+        {/* <div>
+          <OurServices/>
+        </div> */}
       </div>
     </div>
   )

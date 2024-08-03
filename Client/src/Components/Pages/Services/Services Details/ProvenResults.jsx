@@ -3,9 +3,9 @@ import { ProvenResultsCardsData } from '../../../../Data/Data'
 
 const ProvenResults = () => {
     return (
-        <div className='py-20'>
+        <div className='py-20 md:px-14 max-sm:px-6'>
             <div>
-                <h2 className='text-[3rem]'>Proven Results Across Various Industries</h2>
+                <h2 className='text-[3rem] max-sm:text-[2rem]'>Proven Results Across Various Industries</h2>
             </div>
             <div className='flex flex-wrap justify-center gap-10 py-10'>
                 {ProvenResultsCardsData.map((card, index) => (
