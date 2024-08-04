@@ -1,7 +1,7 @@
 https://pagebuzz.vercel.app/
 
-Client 
+Client
 npm run dev
 
-Server
+***Server***
 npm start
