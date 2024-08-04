@@ -21,7 +21,7 @@ const Second = () => {
                                 <p>About Us</p>
                             </div>
                             <h2 className='md:text-[3rem] max-sm:text-[2.7rem] text-wrap  tracking-tighter leading-[1]'>Passion for Digital Transformation</h2>
-                            <p className='text-[#929292]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem odit, quod totam rem distinctio aut est sint facilis! Consequatur?</p>
+                            <p className='text-[#929292]'>Pagebuzz is driven by a passion for digital innovation. We help businesses thrive online through expert marketing, SEO, and web development. Our goal is to transform your brand's digital presence and drive real results.</p>
                             <div className='py-2'>
                                 <div>
                                     <hr className='mx-1 border-t-[1px] py-1 border-[#1E1E21]' />

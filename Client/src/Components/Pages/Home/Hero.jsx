@@ -47,10 +47,10 @@ const Hero = () => {
                 </motion.div>
               </div>
               <div className="md:w-[500px] md:text-justify md:leading-tight md:tracking-tight text-[#929292]">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut nam aliquid tempore ex officia, odit inventore molestias sequi voluptatem exercitationem adipisci dignissimos, ullam consequuntur?</p>
+                <p>Ready to make your brand a digital powerhouse? Pagebuzz is your key. We combine strategic digital marketing, expert SEO, and cutting-edge website development to elevate your online presence. Let us help you reach a wider audience, boost visibility, and drive real results. Together, we'll unlock your brand's full potential and dominate the digital landscape.  </p>
               </div>
               <div>
-                <button className="border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21]">Contact Us</button>
+                <button className="border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] hover:border-white hover:bg-transparent transition-all">Contact Us</button>
               </div>
             </div>
             <div className="z-10 max-sm:hidden">
