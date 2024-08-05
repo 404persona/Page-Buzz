@@ -81,6 +81,7 @@ export const WhyChooseUsCards = [
 export const FeaturedProjectsData = [
   {
     title: "E-commerce Website Revamp for TrendyFashion",
+    slug: "e-commerce",
     content:
       "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
     buttons: {
@@ -96,6 +97,46 @@ export const FeaturedProjectsData = [
     },
     image:
       "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+      // details in the project details
+    details: {
+      title:
+        "Transforming FreshEats' Online Presence through Strategic Social Media Campaigns",
+      content1:
+        "At PageBuzz, we collaborated closely with FreshEats to develop and execute a powerful social media campaign. Our goal was to enhance brand awareness, increase engagement, and drive conversions for their healthy food delivery service.",
+      content2:
+        "Throughout the campaign, we utilized various social media platforms, including Facebook, Instagram, and Twitter, to reach our target audience. We employed various strategies, such as content marketing, influencer partnerships, and targeted advertisements, to drive engagement and drive conversions. In the end, our social media campaign led to significant improvements in brand awareness, increased engagement, and drive conversions for FreshEats.",
+        banner:"https://cdn.pixabay.com/photo/2021/11/08/20/00/money-6780010_1280.png",
+      list1: "Campaign Objectives",
+      list1details: `
+        <ul>
+        <li>Drive higher purchase volume and average order value.</li>
+        <li>Expand customer base through targeted outreach and lead generation.</li>
+        <li> Foster loyalty and repeat purchases through personalized engagement.</li>
+        </ul>
+        `,
+      list2: "Strategy Implemented",
+      list2details: `
+        <ul>
+        <li>Developed and executed a paid social media advertising campaign targeting a specific demographic, generating a 30% increase in website traffic.</li>
+        <li> Implemented influencer marketing partnerships to reach a wider audience, resulting in a 15% increase in new customer sign-ups.</li>
+        <li>Launched targeted email campaigns featuring personalized product recommendations to high-value customers, resulting in a 25% increase in average order value.</li>
+        </ul>
+        `,
+      list3: "Results Achieved",
+      list3details: `
+        <ul>
+        <li>Results Achieved quantifies the success of your campaign strategies and measures how closely they aligned with the stated objectives.</li>
+        <li>Generated $150,000 in additional sales revenue, surpassing the target by 25%. Average order value increased by 30%, and customer lifetime value grew by 15%.</li>
+        <li>Clearly show how the results contributed to overall campaign goals.</li>
+        </ul>
+        `,
+        projectPreview:"https://cdn.pixabay.com/photo/2017/10/05/15/23/ecommerce-2819730_1280.png"
+    },
+    ProjectsData:{
+      Client : "Trendy Fashion",
+      date : "24-November-2023",
+      Services : "Website Development"
+    }
   },
   {
     title: "SEO Optimization for HealthPlus Clinic",
@@ -370,64 +411,80 @@ export const ServicesData = [
 
 export const ProvenResultsCardsData = [
   {
-    title : "E-commerce Success",
-    content : "Ecommerce success hinges on understanding customers, offering compelling products, optimizing website experience, leveraging digital marketing, and providing exceptional customer service.",
-    bgImage : "https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png"
+    title: "E-commerce Success",
+    content:
+      "Ecommerce success hinges on understanding customers, offering compelling products, optimizing website experience, leveraging digital marketing, and providing exceptional customer service.",
+    bgImage:
+      "https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png",
   },
   {
-    title : "Healthcare Engagement",
-    content : "Healthcare engagement fosters patient empowerment, improves health outcomes, enhances communication, builds trust, and drives value-based care delivery.",
-    bgImage : "https://cdn.pixabay.com/photo/2020/08/03/09/39/medical-5459631_1280.png"
+    title: "Healthcare Engagement",
+    content:
+      "Healthcare engagement fosters patient empowerment, improves health outcomes, enhances communication, builds trust, and drives value-based care delivery.",
+    bgImage:
+      "https://cdn.pixabay.com/photo/2020/08/03/09/39/medical-5459631_1280.png",
   },
   {
-    title : "B2B Growth",
-    content : "B2B growth thrives on deep customer understanding, strategic partnerships, innovative solutions, robust sales enablement, and data-driven decision making.",
-    bgImage : "https://cdn.pixabay.com/photo/2019/04/29/16/11/work-4166471_1280.png"
-  }
-]
+    title: "B2B Growth",
+    content:
+      "B2B growth thrives on deep customer understanding, strategic partnerships, innovative solutions, robust sales enablement, and data-driven decision making.",
+    bgImage:
+      "https://cdn.pixabay.com/photo/2019/04/29/16/11/work-4166471_1280.png",
+  },
+];
 
 export const ServiceBenefitsData = [
   {
-    title : "Enhanced Visibility",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+    title: "Enhanced Visibility",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
   },
   {
-    title : "Targeted Traffic",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+    title: "Targeted Traffic",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
   },
   {
-    title : "Increased Conversions",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+    title: "Increased Conversions",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
   },
   {
-    title : "Brand Authority",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+    title: "Brand Authority",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
   },
   {
-    title : "Measurable ROI",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
+    title: "Measurable ROI",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
   },
   {
-    title : "Customer Engagement",
-    content : "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit."
-  }
-]
+    title: "Customer Engagement",
+    content:
+      "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit.",
+  },
+];
 
 export const CategoryData = [
   {
-    title : "Website Development",
-    image : "https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_1280.png"
+    title: "Website Development",
+    image:
+      "https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_1280.png",
   },
   {
-    title : "Digital Marketing",
-    image : "https://cdn.pixabay.com/photo/2022/03/30/09/09/icon-7100795_1280.jpg"
+    title: "Digital Marketing",
+    image:
+      "https://cdn.pixabay.com/photo/2022/03/30/09/09/icon-7100795_1280.jpg",
   },
   {
-    title : "SEO Optimization",
-    image : "https://cdn.pixabay.com/photo/2022/03/26/02/11/seo-7092128_1280.png"
+    title: "SEO Optimization",
+    image:
+      "https://cdn.pixabay.com/photo/2022/03/26/02/11/seo-7092128_1280.png",
   },
   {
-    title : "Social Media Management",
-    image : "https://cdn.pixabay.com/photo/2014/08/22/15/27/facebook-424521_1280.jpg"
-  }
-]
+    title: "Social Media Management",
+    image:
+      "https://cdn.pixabay.com/photo/2014/08/22/15/27/facebook-424521_1280.jpg",
+  },
+];
