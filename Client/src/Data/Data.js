@@ -140,6 +140,7 @@ export const FeaturedProjectsData = [
   },
   {
     title: "SEO Optimization for HealthPlus Clinic",
+    slug : "seo-optimization",
     content:
       "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
     buttons: {
@@ -155,9 +156,48 @@ export const FeaturedProjectsData = [
     },
     image:
       "https://images.pexels.com/photos/669622/pexels-photo-669622.jpeg?auto=compress&cs=tinysrgb&w=600",
+      details : {
+        title:
+          "Optimizing HealthPlus Clinic's Online Presence for Better Search Engine Optimization (SEO)",
+        content1:
+          "At PageBuzz, we worked closely with HealthPlus Clinic to develop and execute a powerful SEO campaign. Our goal was to improve their online presence and drive traffic to their website, ultimately enhancing their online reputation and customer satisfaction.",
+        content2:
+          "Throughout the campaign, we utilized various SEO strategies, such as keyword research, on-page optimization, and off-page optimization. We employed various techniques, such as keyword placement, backlinks, and content marketing, to drive traffic and improve search engine rankings. In the end, our SEO campaign led to significant improvements in online visibility, improved customer satisfaction, and increased brand awareness.",
+          banner : "https://cdn.pixabay.com/photo/2021/08/20/21/58/seo-6561351_1280.png",
+          list1 : "OnPage SEO",
+          list1details:`
+          <ul>
+          <li>Strategic placement of relevant keywords in titles, headings, meta descriptions, and content.</li>
+          <li>Creating valuable, informative, and engaging content that addresses user intent.</li>
+          <li>Ensuring proper use of header tags (H1, H2, etc.), meta tags, and image alt text.</li>
+          </ul>`,
+          list2 : "OffPage SEO",
+          list2details : `
+          <ul>
+          <li>Acquiring high-quality backlinks from reputable websites to improve your website's authority.</li>
+          <li>Promoting your content on social platforms to increase visibility and engagement.</li>
+          <li>Listing your business in relevant online directories to enhance local SEO.</li>
+          </ul>
+          `,
+          list3:"Technical SEO",
+          list3details:`
+          <ul>
+          <li>Improving website loading speed to enhance user experience and search engine rankings.</li>
+          <li>Ensuring your website is fully responsive and displays correctly on mobile devices.</li>
+          <li>Creating an XML sitemap to help search engines discover and index your website's pages.</li>
+          </ul>
+          `,
+          projectPreview:"https://cdn.pixabay.com/photo/2023/09/21/11/11/seo-8266469_1280.png"
+      },
+      ProjectsData:{
+        Client : "HealthPlus Clinic",
+        date : "22-October-2023",
+        Services : "SEO Optimization"
+      }
   },
   {
     title: "Social Media Campaign for FreshEats",
+    slug : "social-media-campaign",
     content:
       "Orci at id enim eu pellentesque habitant. Ut at diam suscipit amet id cursus id blandit. Consectetur maecenas id vivamus integer integer aliquam. Donec amet rhoncus ut turpis massa augue faucibus.",
     buttons: {
@@ -173,6 +213,43 @@ export const FeaturedProjectsData = [
     },
     image:
       "https://images.pexels.com/photos/7309742/pexels-photo-7309742.jpeg?auto=compress&cs=tinysrgb&w=600",
+      details:{
+        title:
+          "Enhancing FreshEats' Online Presence for Social Media Campaigns",
+        content1:
+          "At PageBuzz, we worked closely with FreshEats to develop and execute a powerful social media campaign. Our goal was to improve their online presence and drive traffic to their website, ultimately enhancing their online reputation and customer satisfaction.",
+        content2:
+          "Throughout the campaign, we utilized various social media platforms, such as Facebook, Instagram, and Twitter, to reach our target audience. We employed various strategies, such as content marketing, influencer partnerships, and targeted advertisements, to drive engagement and drive conversions. In the end, our social media campaign led to significant improvements in brand awareness, increased engagement, and drive conversions for FreshEats.",
+          banner:"https://cdn.pixabay.com/photo/2018/05/17/15/10/social-3408791_1280.jpg",
+          list1 : " Define Your Target Audience and Goals",
+          list1details : `
+          <ul>
+          <li>Clearly define your target audience's demographics, interests, and behaviors.</li>
+          <li>Set specific, measurable, achievable, relevant, and time-bound (SMART) goals. Examples include increasing website traffic, generating leads, building brand awareness, or boosting engagement.</li>
+          </ul>
+          `,
+          list2 : "Create Engaging Content",
+          list2details : `
+          <ul>
+          <li>Develop a content calendar to plan and schedule posts in advance.</li>
+          <li> Use eye-catching images, videos, and graphics to grab attention.</li>
+          <li>Encourage users to share their experiences with your brand.</li>
+          </ul>
+          `,
+          list3 : " Leverage Social Media Platforms",
+          list3details : `
+          <ul>
+          <li>Utilize Facebook, Instagram, and Twitter to reach your target audience.</li>
+          <li>Engage with your audience through likes, comments, shares, and engagement metrics.</li>
+          <li>Create custom hashtags and engage with your followers using these hashtags.</li>`
+          ,
+          projectPreview:"https://cdn.pixabay.com/photo/2017/08/01/09/07/mobile-2563782_1280.jpg"
+      },
+      ProjectsData:{
+        Client : "FreshEats",
+        date : "15-July-2023",
+        Services : "Social Media Campaign"
+      }
   },
 ];
 

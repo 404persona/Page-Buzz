@@ -13,7 +13,7 @@ const ProjectDetail = () => {
     return (
         <div>
             <div className='z-0'>
-                <div className='flex justify-between md:gap-[100px] absolute md:top-[-600px] max-sm:top-[800px] left-0 right-0 bottom-0 '>
+                <div className='flex justify-between md:gap-[100px] absolute md:top-[-600px] max-sm:top-[2000px] left-0 right-0 bottom-0 '>
                     <div className='absolute top-[170%] transform -translate-x-1/2 -translate-y-1/2'>
                         <div className='md:w-[400px] md:h-[400px] max-sm:w-[200px] max-sm:h-[200px] md:bg-green-500/40 bg-green-500 blur-[100px] rounded-full'></div>
                     </div>
@@ -22,7 +22,7 @@ const ProjectDetail = () => {
                 </div> */}
                 </div>
             </div>
-            <div className='p-12'>
+            <div className='md:p-12'>
                 <div style={{
                     backgroundImage: 'url(/AllPagesBg.png)',
                 }} className='pt-[100px] py-20 z-40'>
@@ -37,10 +37,10 @@ const ProjectDetail = () => {
                 </div>
             </div>
             <div className='z-10 py-14 relative' >
-                <div className='px-16'>
-                    <div className=' flex justify-evenly gap-16'>
+                <div className='md:px-16 max-sm:px-6'>
+                    <div className=' flex max-sm:flex-col justify-evenly gap-16'>
                         <div>
-                            <h2 className='text-[2.5rem] leading-tight pb-2'>{project.details.title}</h2>
+                            <h2 className='text-[2.5rem] max-sm:text-[1.7rem] leading-tight pb-2'>{project.details.title}</h2>
                             <div className='text-[#929292]'>
                                 <p>{project.details.content1}</p>
                                 <br />
@@ -49,7 +49,7 @@ const ProjectDetail = () => {
 
                         </div>
                         <div>
-                            <div className=' border-[1.5px] border-[#1E1E21] p-8  rounded-3xl px-10 '>
+                            <div className=' border-[1.5px] border-[#1E1E21] p-8  rounded-3xl px-10 max-sm:mb-10'>
                                 <div className='font-medium py-3 w-[180px]'>
                                     <hr className='border-bottom-[1.5px] border-[#1E1E21] py-1' />
                                     Client:<br /><span className='text-[#929292] font-normal '>{project.ProjectsData.Client}</span>
@@ -66,11 +66,11 @@ const ProjectDetail = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center py-6'>
-                        <img src={project.details.banner} className='h-[480px] w-[1920px] object-center object-cover rounded-3xl' />
+                        <img src={project.details.banner} className='md:h-[480px] max-sm:h-[300px] w-[1920px] object-center object-cover rounded-3xl' />
                     </div>
                     {/* Cards Below Banner  */}
-                    <div className='py-10 flex gap-10 justify-center flex-wrap'>
-                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl w-[40%]'>
+                    <div className='py-10 flex gap-10 md:justify-center flex-wrap'>
+                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl md:w-[40%]'>
 
                             <div className=''>
                                 <h3 className='text-[2rem]'>{project.details.list1}</h3>
@@ -82,7 +82,7 @@ const ProjectDetail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl w-[40%]'>
+                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl md:w-[40%]'>
 
                             <div className=''>
                                 <h3 className='text-[2rem]'>{project.details.list2}</h3>
@@ -90,7 +90,7 @@ const ProjectDetail = () => {
                                 <div className='details text-[#929292] leading-tight text-[.9rem]' dangerouslySetInnerHTML={{ __html: project.details.list2details }}></div>
                             </div>
                         </div>
-                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl w-[40%]'>
+                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl md:w-[40%]'>
 
                             <div className=''>
                                 <h3 className='text-[2rem]'>{project.details.list3}</h3>
@@ -98,10 +98,10 @@ const ProjectDetail = () => {
                                 <div className='details text-[#929292] leading-tight text-[.9rem]' dangerouslySetInnerHTML={{ __html: project.details.list3details }}></div>
                             </div>
                         </div>
-                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl w-[40%]'>
+                        <div className='overflow-hidden p-10 border-[1.5px] border-[#1E1E21] rounded-3xl md:w-[40%]'>
 
                             <div className=''>
-                                <img src={project.details.projectPreview} />
+                                <img src={project.details.projectPreview} className='rounded-3xl' />
                             </div>
                         </div>
                     </div>
