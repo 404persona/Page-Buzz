@@ -10,6 +10,7 @@ import Projects from "./Components/Pages/Projects/Projects";
 import './App.css';
 import ScrollToTop from './ScrollToTop';
 import ProjectDetail from './Components/Pages/Projects/Projects Details/ProjectDetail';
+import Pricing from './Components/Pages/Pricing/Pricing';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/services/:slug' element={<ServicesDetail />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:slug' element={<ProjectDetail />} />
+          <Route path='/pricing' element={<Pricing />} />
         </Routes>
         <Footer />
       </div>

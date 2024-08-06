@@ -16,9 +16,14 @@ export const NavLinks = [
     href: "/projects",
   },
   {
+    label :"pricing",
+    href: "/pricing",
+  },
+  {
     label: "contact",
     href: "/contact",
   },
+  
 ];
 
 export const Herotext = [
@@ -563,5 +568,24 @@ export const CategoryData = [
     title: "Social Media Management",
     image:
       "https://cdn.pixabay.com/photo/2014/08/22/15/27/facebook-424521_1280.jpg",
+  },
+];
+
+export const AccordationData = [
+  {
+    title: "How can digital marketing benefit my business?",
+    content: "Donec rhoncus turpis massa diam nulla. Semper ut commodo integer nam pretium..."
+  },
+  {
+    title: "What digital marketing services do you offer?",
+    content: "Vestibulum augue est non scelerisque ut arcu nunc..."
+  },
+  {
+    title: "How Digital Marketing Benefits my Business?",
+    content: "Nunc aliquet lectus egestas adipiscing massa ultrices interdum imperdiet..."
+  },
+  {
+    title: "How long does it take to see results?",
+    content: "Nunc aliquet lectus egestas adipiscing massa ultrices interdum imperdiet..."
   },
 ];
