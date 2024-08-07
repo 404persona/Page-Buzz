@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLinks } from './../../Data/Data';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
+// import useLoader from '../../useLoader';
 
 const textVariants = {
   hidden: { opacity: 0, transform: 'translateY(100px)' },
@@ -86,7 +87,7 @@ const Header = () => {
             <ul className='overflow-hidden'>
               <li className="flex gap-6">
                 {NavLinks.map((links, index) => (
-                  <Link key={index} className='uppercase font-medium overflow-hidden' to={links.href}>
+                  <Link key={index} className='uppercase font-medium overflow-hidden' to={links.href} onClick={()=> handleNavigation(`${links.href}`)} >
                     <motion.p
                       custom={index}
                       initial="hidden"
