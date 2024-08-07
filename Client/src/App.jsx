@@ -11,6 +11,8 @@ import './App.css';
 import ScrollToTop from './ScrollToTop';
 import ProjectDetail from './Components/Pages/Projects/Projects Details/ProjectDetail';
 import Pricing from './Components/Pages/Pricing/Pricing';
+import HelpCenter from './Components/Pages/HelpCenter.jsx/HelpCenter';
+import Contact from './Components/Pages/Contact/Contact';
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:slug' element={<ProjectDetail />} />
           <Route path='/pricing' element={<Pricing />} />
+          <Route path='/help-center' element={<HelpCenter />} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer />
       </div>

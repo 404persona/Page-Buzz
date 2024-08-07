@@ -589,3 +589,90 @@ export const AccordationData = [
     content: "Nunc aliquet lectus egestas adipiscing massa ultrices interdum imperdiet..."
   },
 ];
+
+export const GeneralFaqsData = [
+  {
+    title : "What services do you offer?",
+    content : "We offer a comprehensive range of digital marketing services including SEO, PPC advertising, social media marketing, content marketing, email marketing, website design and development, and analytics.   "
+  },
+  {
+    title : "How long does it take to see results from your SEO services?",
+    content : "SEO is an ongoing process and results can vary depending on several factors such as competition, website optimization, and content quality. Typically, you can start seeing improvements in your search engine rankings within 3-6 months.",
+  },
+  {
+    title : "What platforms do you specialize in for website development?",
+    content : "We specialize in developing websites using popular platforms like WordPress, Shopify, and custom-built solutions based on your specific needs. Specially Custom Designs"
+  },
+  // {
+  //   title : "Do you provide website hosting and maintenance services?",
+  //   content : "Yes, we offer website hosting and maintenance packages to ensure your website is always up and running smoothly."
+  // },
+  {
+    title : "How do you measure the success of a digital marketing campaign?",
+    content : "We use a variety of metrics to measure the success of your campaign, including website traffic, conversions, ROI, social media engagement, and lead generation."
+  },
+  // {
+  //   title : "Do you offer pay-per-click (PPC) advertising services?",
+  //   content : "Yes, we offer PPC advertising services on platforms like Google Ads and social media to help you reach your target audience effectively."
+  // }
+]
+
+export const HelpCenterCardsData = [
+  {
+    title : "Account Management",
+    image : "https://cdn.pixabay.com/photo/2021/03/19/12/37/man-6107457_1280.png"
+  },
+  {
+    title : "Billing and Payments",
+    image : "https://cdn.pixabay.com/photo/2020/04/04/04/23/money-5000789_1280.png"
+  },
+  {
+    title : "Analytics and Reporting",
+    image : "https://cdn.pixabay.com/photo/2023/05/01/17/34/data-7963502_1280.png"
+  },
+  {
+    title : "General Support",
+    image : "https://cdn.pixabay.com/photo/2021/09/12/08/49/headset-6617715_1280.png"
+  }
+]
+
+export const ServiceFaqsData = [
+  {
+    title : "How long does it take to see results from SEO?",
+    content : "While SEO is an ongoing process, you can generally expect to see improvements in your search engine rankings within 3-6 months."
+  },
+  {
+    title : "What is the difference between on-page and off-page SEO?",
+    content : "On-page SEO focuses on optimizing elements within your website, while off-page SEO involves building external links and improving your website's authority."
+  },
+  {
+    title : "Do you offer local SEO services?",
+    content : "If applicable, answer whether you specialize in local SEO for businesses targeting specific geographic areas."
+  },
+  {
+    title : "What platforms do you specialize in for website development?",
+    content : "List the primary platforms your company uses for website development (e.g., WordPress, Shopify, Wix, custom development)."
+  }
+]
+
+import { FiPhone } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+import { GoMail } from "react-icons/go";
+
+export const ContactUsData = [
+ {
+  icon : FiPhone ,
+  title : "Phone Number",
+  content : "4 × 774482283"
+ },
+ {
+  icon : SlLocationPin,
+  title : "Our Location",
+  content : "265 Taurean Knoll, Rueckertown 16850"
+ },
+ {
+  icon : GoMail,
+  title : "Our Email",
+  content : "anas.seoalchemist@gmail.com"
+ }
+]

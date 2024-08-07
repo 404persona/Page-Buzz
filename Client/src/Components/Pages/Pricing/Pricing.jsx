@@ -38,7 +38,7 @@ const Pricing = () => {
             <MainVideo/>
         </div>
         <div>
-            <Expertise/>
+            <Expertise />
         </div>
         <div>
             <Faqs/>

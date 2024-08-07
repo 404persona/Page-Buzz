@@ -32,9 +32,12 @@ const Footer = () => {
                         <button className='border-[1px] border-white p-2 rounded-3xl' >Instagram</button>
                         <button className='border-[1px] border-white p-2 rounded-3xl' >LinkedIn</button>
                         <button className='border-[1px] border-white p-2 rounded-3xl' >Behance</button>
+                        <button className='md:hidden border-[1px] border-white p-2 rounded-3xl' ><Link to='/pricing' >Pricing</Link></button>
+                        <button className='md:hidden border-[1px] border-white p-2 rounded-3xl' ><Link to='/help-center' >Help Center</Link></button>
                     </div>
-                    <div className='flex justify-center max-sm:gap-6 max-sm:flex-wrap md:gap-4 py-1'>
+                    <div className='max-sm:hidden flex justify-center max-sm:gap-6 max-sm:flex-wrap md:gap-4 py-1'>
                         <button className='border-[1px] border-white p-2 rounded-3xl' ><Link to='/pricing' >Pricing</Link></button>
+                        <button className='border-[1px] border-white p-2 rounded-3xl' ><Link to='/help-center' >Help Center</Link></button>
                         {/* <button className='border-[1px] border-white p-2 rounded-3xl' >Instagram</button>
                         <button className='border-[1px] border-white p-2 rounded-3xl' >LinkedIn</button>
                         <button className='border-[1px] border-white p-2 rounded-3xl' >Behance</button> */}
