@@ -1,5 +1,6 @@
 import React from 'react'
 import Accordion from './Accordation'
+import { AccordationData } from '../../../Data/Data'
 
 const Faqs = () => {
   return (
@@ -11,7 +12,7 @@ const Faqs = () => {
             <p className='md:px-48 max-sm:px-8 text-center md:py-4 text-[.9rem] text-[#929292]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae unde deserunt labore debitis vel, et, sed id molestiae rerum error ab ea iste! Sint quisquam suscipit laborum, ut consectetur similique.</p>
         </div>
         <div className='px-4'>
-        <Accordion/>
+        <Accordion data={AccordationData}/>
         </div>
     </div>
   )

@@ -103,7 +103,7 @@ const Header = () => {
           </div>
           <div className='hidden md:flex'>
             <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-3 font-medium'>
-              Email Us
+            <Link to='/email'>  Email Us</Link>
             </button>
           </div>
           <div className='md:hidden'>
@@ -150,9 +150,11 @@ const Header = () => {
                   </motion.p>
                 </Link>
               ))}
-              <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-6 py-4 font-medium mt-4'>
-                Email Us
-              </button>
+              <Link to='/email'>
+                <button className='border-[1px] border-[#1E1E21] uppercase p-2 rounded-2xl bg-[#1E1E21] px-6 py-4 font-medium mt-4'>
+                  Email Us
+                </button>
+              </Link>
             </ul>
           </motion.div>
         )}

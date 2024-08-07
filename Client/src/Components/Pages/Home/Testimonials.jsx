@@ -75,10 +75,10 @@ const Testimonials = () => {
             </div>
             <div className='flex justify-between md:gap-[100px] absolute md:top-[-600px] max-sm:top-[-1800px] left-0 right-0 bottom-0 '>
                 <div className='absolute top-[50%] transform -translate-x-1/2 -translate-y-1/2'>
-                    <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] md:bg-green-500/40 bg-green-500 blur-[100px] rounded-full'></div>
+                    <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] md:bg-green-500/30  blur-[150px] rounded-full'></div>
                 </div>
                 <div className='absolute top-[50%] md:left-[950px] max-sm:left-[300px] transform md:translate-x-1/2 md:translate-y-1/2'>
-                    <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] md:bg-green-500/40 bg-green-500 blur-[100px] rounded-full'></div>
+                    <div className='md:w-[300px] md:h-[300px] max-sm:w-[200px] max-sm:h-[200px] md:bg-green-500/30  blur-[150px] rounded-full'></div>
                 </div>
             </div>
         </div>

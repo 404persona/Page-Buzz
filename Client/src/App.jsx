@@ -13,6 +13,8 @@ import ProjectDetail from './Components/Pages/Projects/Projects Details/ProjectD
 import Pricing from './Components/Pages/Pricing/Pricing';
 import HelpCenter from './Components/Pages/HelpCenter.jsx/HelpCenter';
 import Contact from './Components/Pages/Contact/Contact';
+import Email from './Components/Pages/Email/Email';
+import Error404 from './Components/Pages/Error/Error404';
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/help-center' element={<HelpCenter />} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/email' element={<Email/>} />
+          <Route path='*' element={<Error404/>} />
         </Routes>
         <Footer />
       </div>
