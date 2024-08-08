@@ -7,7 +7,7 @@ const Loader = () => {
   return (
     <motion.div
       className="fixed inset-0 flex items-center justify-center bg-transparent z-50"
-      initial={{ transform: 'translateY(0px)', opacity: 0, }}
+      initial={{ transform: 'translateY(400px)', opacity: 0 }}
       animate={{ transform: 'translateY(0px)', opacity: 1 }}
       exit={{ transform: 'translateY(-1000px)', opacity: 0 }}
       transition={{ duration: 1.5, ease: 'easeInOut' }}
@@ -18,7 +18,7 @@ const Loader = () => {
             <motion.div
               key={i}
               className="w-[170px] h-screen bg-black"
-              initial={{ y: '-1000px' }}
+              initial={{ y: '600px' }}
               animate={{ y: '0px' }}
               exit={{ y: '-1000px', opacity: 0 }}
               transition={{
@@ -29,10 +29,9 @@ const Loader = () => {
             />
           ))}
           <div className="relative flex justify-end items-end">
-          <CountUp className='absolute md:right-[100px] max-sm:right-[500px] text-[#929292] md:py-6 max-sm:py-20  font-semibold md:text-[4rem] text-[2rem]' start={0} end={100} duration={5} suffix="%" />
+            <CountUp className='absolute right-[100px] text-[#929292] py-6 font-semibold text-[4rem]' start={0} end={100} duration={5} suffix="%" />
+          </div>
         </div>
-        </div>
-        
       </div>
     </motion.div>
   );

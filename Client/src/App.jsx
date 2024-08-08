@@ -33,7 +33,7 @@ const AppContent = () => {
         setIsLoading(false);
         navigate(nextLocation.pathname);
         setNextLocation(null);
-      }, 4000); // Adjust duration to match your loader animation
+      }, 2000); // Adjust duration to match your loader animation
       return () => clearTimeout(timer);
     }
   }, [nextLocation, navigate]);

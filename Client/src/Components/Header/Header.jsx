@@ -87,7 +87,7 @@ const Header = () => {
             <ul className='overflow-hidden'>
               <li className="flex gap-6">
                 {NavLinks.map((links, index) => (
-                  <Link key={index} className='uppercase font-medium overflow-hidden' to={links.href} onClick={()=> handleNavigation(`${links.href}`)} >
+                  <Link key={index} className='uppercase font-medium overflow-hidden' to={links.href} >
                     <motion.p
                       custom={index}
                       initial="hidden"
