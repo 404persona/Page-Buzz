@@ -1,10 +1,29 @@
-import React from 'react'
+import { useAnimation, motion } from 'framer-motion';
+import React, { useEffect } from 'react'
 import { FaQuoteLeft } from "react-icons/fa";
+import { useInView } from 'react-intersection-observer';
 
 const OurVision = () => {
+  const controls = useAnimation();
+    const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+        }
+    }, [controls, inView]);
+
+    const OurVisionVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
   return (
-    <div className='md:px-20 py-20 relative max-sm:top-[50px] max-sm:px-6'>
-      <div className=''>
+    <div ref={ref} className='md:px-20 py-20 relative max-sm:top-[50px] max-sm:px-6'>
+      <motion.div 
+      initial='hidden'
+      animate={controls}
+      variants={OurVisionVariants}
+      >
         <div className='flex justify-start'>
           <div><h1 className='text-[4rem] max-sm:text-[3rem] bg-gradient-to-r from-white to-gray-600  text-transparent bg-clip-text font-medium'>Our Vision</h1></div>
         </div>
@@ -18,7 +37,7 @@ const OurVision = () => {
             <q className=' text-[2rem] max-sm:text-[1.5rem] font-medium '>To empower businesses worldwide by providing innovative and customized digital solutions that drive growth, foster engagement, and transform their online presence. We strive to be the leading digital agency known for our excellence, creativity, and commitment to client success.</q>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

@@ -17,7 +17,8 @@ const Testimonials = () => {
 
     const testimonialsVariants = {
         hidden: { opacity: 0, y: 200 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        visible: { opacity: 1, y: 0,  },
+        transition: { duration: 2 }
     };
 
     return (

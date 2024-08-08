@@ -18,7 +18,7 @@ const Loader = () => {
           {[...Array(8)].map((_, i) => (
             <motion.div
               key={i}
-              className="w-[170px] max-sm:w-[70px] h-screen bg-black"
+              className="w-[170px] max-sm:w-[70px] h-screen bg-[#151414]"
               initial={{ y: '5000px' }}
               animate={{ y: '0px' }}
               exit={{ y: '-5000px', opacity: 1 }}
