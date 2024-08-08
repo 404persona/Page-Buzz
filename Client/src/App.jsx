@@ -33,7 +33,7 @@ const AppContent = () => {
         setIsLoading(false);
         navigate(nextLocation.pathname);
         setNextLocation(null);
-      }, 2000); // Adjust duration to match your loader animation
+      }, 200); // Adjust duration to match your loader animation
       return () => clearTimeout(timer);
     }
   }, [nextLocation, navigate]);
@@ -44,7 +44,7 @@ const AppContent = () => {
     const timer = setTimeout(() => {
       console.log('Timeout completed, setting loading to false');
       setIsLoading(false);
-    }, 2000); // Adjust duration to match your loader animation
+    }, 3000); // Adjust duration to match your loader animation
     return () => clearTimeout(timer);
   }, [location]);
 
